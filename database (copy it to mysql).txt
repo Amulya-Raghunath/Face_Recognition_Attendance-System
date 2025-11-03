@@ -1,0 +1,6 @@
+create database student_database;
+create table Login(username varchar(10),password varchar(10));
+create table Attend(name varchar(23),roll_no varchar(10),class varchar(2),status varchar(15),date date,p_email varchar(50));
+insert into Attend values('Amulya','1jt17is004','7','Absent','2021-04-23','amulyajamadagni@gmail.com');
+
+ 
