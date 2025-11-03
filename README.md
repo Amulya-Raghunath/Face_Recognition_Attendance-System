@@ -1,31 +1,38 @@
 # Face_Recognition_Attendance-System
-A desktop-based Face Recognition Attendance System built using Python, OpenCV, and Tkinter, that automatically marks attendance through live facial recognition.
-The system includes faculty authentication (face + login) to ensure secure attendance approval and prevent proxy attendance.
+A desktop-based attendance automation system that uses **LBPH face recognition** and **Tkinter GUI** to mark attendance securely and prevent proxy attendance. Faculty verification uses both **login + face authentication** for extra security.
 
-🚀 Key Features
-Feature	Description
-✅ LBPH Facial Recognition	Reliable & fast face identification
-✅ Real-time Student Detection	Captures & verifies faces via webcam
-✅ Faculty Face Authentication	Dual-layer security (login + face)
-✅ Tkinter UI	Clean and simple desktop interface
-✅ Attendance Logging	Stored in database (MySQL)
-✅ Dataset Creation Module	Capture & store face images
-✅ Model Training Script	Train LBPH recognizer on captured faces
-🧠 Tech Stack
-Component	Technology
-Language	Python
-GUI Framework	Tkinter
-Face Recognition	OpenCV LBPHFaceRecognizer
-Image Processing	OpenCV, NumPy
-Database	MySQL 
-Other Libraries	PIL, datetime, csv
-🏗️ System Workflow
+---
 
-1️⃣ Student/Faculty face images are captured
-2️⃣ LBPH algorithm trains a face recognition model
-3️⃣ Face is detected via webcam in runtime
-4️⃣ Model predicts identity → attendance is recorded
-5️⃣ Faculty login & face match required to validate attendance
-6️⃣ Data stored securely in database
+## 🚀 Features
 
+- ✅ LBPH Face Recognition (Fast & Lightweight)
+- ✅ Dual Authentication (Faculty: Login + Face Match)
+- ✅ Real-time webcam face detection
+- ✅ Tkinter-based Desktop UI
+- ✅ Automatic attendance logging
+- ✅ Student dataset creation & training module
+- ✅ MySQL database integration
 
+---
+
+## 🧠 Tech Stack
+
+| Category | Tools |
+|---|---|
+Language | Python  
+GUI | Tkinter  
+Face Recognition | OpenCV (LBPHFaceRecognizer)  
+Database | MySQL / SQLite  
+Libraries | NumPy, PIL, datetime, CSV  
+
+---
+
+## 🏗️ Workflow
+
+1️⃣ Capture face images  
+2️⃣ Train LBPH model  
+3️⃣ Login (faculty)  
+4️⃣ Validate face via webcam  
+5️⃣ Mark attendance → stored in database  
+
+---
